@@ -1,0 +1,84 @@
+﻿table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color: lightblue;
+}
+
+p {
+    margin: 5px;
+}
+
+#noncrudaction {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#noncrudaction button {
+    margin: 10px;
+    padding: 7px;
+}
+
+#membertablediv {
+    display: flex;
+}
+
+#avgageformdiv {
+    display: none;
+    flex-direction: column;
+}
+
+#avgageformdiv button {
+    margin: 10px;
+    padding: 7px;
+}
+
+#formdiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#formdiv button, input {
+    margin: 10px;
+    padding: 7px;
+}
+
+#formdiv label {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#updateformdiv {
+    display: none;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#updateformdiv button, input {
+    margin: 10px;
+    padding: 7px;
+}
+
+#updateformdiv label {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+table button {
+    padding: 2px;
+    margin: 5px;
+}

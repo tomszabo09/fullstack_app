@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BV3N92_HFT_2021221.Data\BV3N92_HFT_2021221.Data.csproj" />
+    <ProjectReference Include="..\BV3N92_HFT_2021221.Logic\BV3N92_HFT_2021221.Logic.csproj" />
+    <ProjectReference Include="..\BV3N92_HFT_2021221.Models\BV3N92_HFT_2021221.Models.csproj" />
+    <ProjectReference Include="..\BV3N92_HFT_2021221.Repository\BV3N92_HFT_2021221.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

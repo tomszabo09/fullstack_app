@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Party Member UI</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Party Member Catalogue</h1>
+
+    <div id="formdiv">
+        <label>Member Name</label>
+        <input type="text" id="membername" />
+        <label>Member Age</label>
+        <input type="number" id="memberage" min="18" max="70" />
+        <label>Party ID</label>
+        <input type="number" id="partyid" min="1" max="9" />
+        <button type="button" onclick="create()">Add Member</button>
+    </div>
+
+    <div id="updateformdiv">
+        <label>Member Name</label>
+        <input type="text" id="membernametoupdate" />
+        <label>Member Age</label>
+        <input type="number" id="memberagetoupdate" min="18" max="70" />
+        <label>Party ID</label>
+        <input type="number" id="partyidtoupdate" min="1" max="9" />
+        <button type="button" onclick="update()">Update Member</button>
+    </div>
+
+    <div id="noncrudaction">
+        <button type="button" onclick="avgageperparty()">Average Age per Party</button>
+        <p>Please note that the age pool is between 18 and 70 years, while party ID can only take up values listed in its column below. Invalid inputs may cause the program to crash.</p>
+    </div>
+
+    <div id="avgageformdiv">
+        <table>
+            <thead>
+                <tr>
+                    <th>Party Name</th>
+                    <th>Average Age</th>
+                </tr>
+            </thead>
+            <tbody id="avgagearea"></tbody>
+        </table>
+        <button type="button" onclick="loadmemberstable()">Back</button>
+    </div>
+
+    <div id="membertablediv">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Party ID</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="resultarea"></tbody>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
